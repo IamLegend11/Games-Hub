@@ -1,0 +1,77 @@
+/* General reset and body styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: whitesmoke;
+  color: #333;
+}
+
+header {
+  text-align: center;
+  padding: 30px;
+  background-color: #4caf50;
+  color: whitesmoke;
+  opacity: 0.8;
+}
+
+header h1 {
+  font-size: 3em;
+}
+
+main {
+  padding: 30px;
+}
+
+.games {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(500px, 2fr));
+  gap: 70px;
+  margin: 20px 70px;
+}
+
+.game-card {
+  background-color: white;
+  padding: 20px;
+  border-radius: 7px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.game-card:hover {
+  transform: translateY(-10px);
+}
+
+.game-card h2 {
+  font-size: 1.8em;
+  margin-bottom: 10px;
+}
+
+.game-card p {
+  font-size: 1.1em;
+  margin-bottom: 15px;
+}
+
+button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+img {
+  width: 500px;
+  height: 300px;
+}
